@@ -70,14 +70,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_channels: minimal.", __LINE__,
     {
         "account_channels",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_channels",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
       }
     ]
     })"
@@ -86,7 +86,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_channels: account and ledger hash.", __LINE__,
     {
         "account_channels",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210"
     },
     RPCCallTestData::no_exception,
@@ -94,7 +94,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_channels",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "destination_account" : "FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210FEDCBA9876543210"
       }
     ]
@@ -104,7 +104,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_channels: account and ledger index.", __LINE__,
     {
         "account_channels",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "closed"
     },
     RPCCallTestData::no_exception,
@@ -112,7 +112,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_channels",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "destination_account" : "closed"
       }
     ]
@@ -122,16 +122,16 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_channels: two accounts.", __LINE__,
     {
         "account_channels",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_channels",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-         "destination_account" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+         "destination_account" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
       }
     ]
     })"
@@ -140,8 +140,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_channels: two accounts and ledger hash.", __LINE__,
     {
         "account_channels",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
     },
     RPCCallTestData::no_exception,
@@ -149,8 +149,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_channels",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-         "destination_account" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+         "destination_account" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_hash" : "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
       }
     ]
@@ -160,8 +160,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_channels: two accounts and ledger index.", __LINE__,
     {
         "account_channels",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "90210"
     },
     RPCCallTestData::no_exception,
@@ -169,8 +169,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_channels",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-         "destination_account" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+         "destination_account" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_index" : 90210
       }
     ]
@@ -197,8 +197,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_channels: too many arguments.", __LINE__,
     {
         "account_channels",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "current",
         "strict"
     },
@@ -238,14 +238,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_currencies: minimal.", __LINE__,
     {
         "account_currencies",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_currencies",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
       }
     ]
     })"
@@ -254,7 +254,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_currencies: strict.", __LINE__,
     {
         "account_currencies",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "strict"
     },
     RPCCallTestData::no_exception,
@@ -262,7 +262,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_currencies",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -272,7 +272,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_currencies: ledger index.", __LINE__,
     {
         "account_currencies",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "42"
     },
     RPCCallTestData::no_exception,
@@ -280,7 +280,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_currencies",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 42
       }
     ]
@@ -290,7 +290,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_currencies: validated ledger.", __LINE__,
     {
         "account_currencies",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "validated"
     },
     RPCCallTestData::no_exception,
@@ -298,7 +298,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_currencies",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "validated"
       }
     ]
@@ -325,7 +325,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_currencies: too many arguments.", __LINE__,
     {
         "account_currencies",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "strict"
     },
@@ -345,7 +345,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_currencies: invalid second argument.", __LINE__,
     {
         "account_currencies",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "yup"
     },
     RPCCallTestData::no_exception,
@@ -353,7 +353,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_currencies",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0
       }
     ]
@@ -401,14 +401,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_info: minimal.", __LINE__,
     {
         "account_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
       }
     ]
     })"
@@ -417,7 +417,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_info: with numeric ledger index.", __LINE__,
     {
         "account_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "77777"
     },
     RPCCallTestData::no_exception,
@@ -425,7 +425,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 77777
       }
     ]
@@ -435,7 +435,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_info: with text ledger index.", __LINE__,
     {
         "account_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "closed"
     },
     RPCCallTestData::no_exception,
@@ -443,7 +443,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "closed"
       }
     ]
@@ -453,7 +453,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_info: with ledger hash.", __LINE__,
     {
         "account_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
     },
     RPCCallTestData::no_exception,
@@ -461,7 +461,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_hash" : "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
       }
     ]
@@ -472,7 +472,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_info: strict.", __LINE__,
     {
         "account_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "strict"
     },
     RPCCallTestData::no_exception,
@@ -480,7 +480,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -491,7 +491,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_info: with ledger index and strict.", __LINE__,
     {
         "account_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "validated",
         "strict"
     },
@@ -528,7 +528,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_info: too many arguments.", __LINE__,
     {
         "account_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "strict",
         "extra"
@@ -569,14 +569,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: minimal.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_lines",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
       }
     ]
     })"
@@ -585,16 +585,16 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: peer.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_lines",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-         "peer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+         "peer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
       }
     ]
     })"
@@ -603,8 +603,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: peer and numeric ledger index.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "888888888"
     },
     RPCCallTestData::no_exception,
@@ -612,9 +612,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_lines",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 888888888,
-         "peer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "peer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
       }
     ]
     })"
@@ -623,8 +623,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: peer and text ledger index.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "closed"
     },
     RPCCallTestData::no_exception,
@@ -632,9 +632,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_lines",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "closed",
-         "peer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "peer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
       }
     ]
     })"
@@ -643,8 +643,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: peer and ledger hash.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "FFFFEEEEDDDDCCCCBBBBAAAA9999888877776666555544443333222211110000"
     },
     RPCCallTestData::no_exception,
@@ -652,9 +652,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_lines",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_hash" : "FFFFEEEEDDDDCCCCBBBBAAAA9999888877776666555544443333222211110000",
-         "peer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "peer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
       }
     ]
     })"
@@ -681,8 +681,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: four arguments.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "12345678",
         "current"
     },
@@ -691,9 +691,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_lines",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 12345678,
-         "peer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "peer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
       }
     ]
     })"
@@ -703,8 +703,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: five arguments.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "12345678",
         "current",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
@@ -714,9 +714,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_lines",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 12345678,
-         "peer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "peer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
       }
     ]
     })"
@@ -725,8 +725,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: too many arguments.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "12345678",
         "current",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
@@ -766,7 +766,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: second invalid accountID.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         ""  // Note: very few values are detected as bad!
     },
     RPCCallTestData::no_exception,
@@ -774,7 +774,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_lines",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
        }
     ]
     })",
@@ -783,8 +783,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_lines: invalid ledger selector.", __LINE__,
     {
         "account_lines",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "not_a_ledger"
     },
     RPCCallTestData::no_exception,
@@ -792,9 +792,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_lines",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0,
-         "peer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+         "peer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
        }
     ]
     })",
@@ -805,14 +805,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: minimal.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
       }
     ]
     })"
@@ -821,7 +821,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: with numeric ledger index.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "77777"
     },
     RPCCallTestData::no_exception,
@@ -829,7 +829,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 77777
       }
     ]
@@ -839,7 +839,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: with text ledger index.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "closed"
     },
     RPCCallTestData::no_exception,
@@ -847,7 +847,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "closed"
       }
     ]
@@ -857,7 +857,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: with ledger hash.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
     },
     RPCCallTestData::no_exception,
@@ -865,7 +865,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_hash" : "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
       }
     ]
@@ -876,7 +876,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: strict.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "strict"
     },
     RPCCallTestData::no_exception,
@@ -884,7 +884,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -894,7 +894,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: with ledger index and strict.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "validated",
         "strict"
     },
@@ -903,7 +903,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "validated",
          "strict" : 1
       }
@@ -932,7 +932,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: four arguments.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "extra",
         "strict",
@@ -942,7 +942,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -953,7 +953,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: five arguments.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "extra1",
         "extra2",
@@ -964,7 +964,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -974,7 +974,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: too many arguments.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "extra1",
         "extra2",
@@ -1017,7 +1017,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: invalid ledger selection 1.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "no_ledger"
     },
     RPCCallTestData::no_exception,
@@ -1025,7 +1025,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0
        }
     ]
@@ -1037,7 +1037,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_objects: invalid ledger selection 2.", __LINE__,
     {
         "account_objects",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "no_ledger",
         "strict"
     },
@@ -1046,7 +1046,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_objects",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0,
          "strict" : 1
        }
@@ -1059,14 +1059,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: minimal.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_offers",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
       }
     ]
     })"
@@ -1075,7 +1075,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: with numeric ledger index.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "987654321"
     },
     RPCCallTestData::no_exception,
@@ -1083,7 +1083,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 987654321
       }
     ]
@@ -1093,7 +1093,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: with text ledger index.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "validated"
     },
     RPCCallTestData::no_exception,
@@ -1101,7 +1101,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "validated"
       }
     ]
@@ -1111,7 +1111,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: with ledger hash.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
     },
     RPCCallTestData::no_exception,
@@ -1119,7 +1119,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_hash" : "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
       }
     ]
@@ -1130,7 +1130,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: strict.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "strict"
     },
     RPCCallTestData::no_exception,
@@ -1138,7 +1138,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -1149,7 +1149,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: with ledger index and strict.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "validated",
         "strict"
     },
@@ -1158,7 +1158,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "validated",
          "strict" : 1
       }
@@ -1187,7 +1187,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: four arguments.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "extra",
         "strict",
@@ -1197,7 +1197,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -1207,7 +1207,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: too many arguments.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "extra1",
         "extra2",
@@ -1249,7 +1249,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: invalid ledger selection 1.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "no_ledger"
     },
     RPCCallTestData::no_exception,
@@ -1257,7 +1257,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0
        }
     ]
@@ -1269,7 +1269,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_offers: invalid ledger selection 2.", __LINE__,
     {
         "account_offers",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "no_ledger",
         "strict"
     },
@@ -1278,7 +1278,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_offers",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0,
          "strict" : 1
        }
@@ -1291,14 +1291,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: minimal.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
       }
     ]
     })"
@@ -1307,7 +1307,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index .", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "444"
     },
     RPCCallTestData::no_exception,
@@ -1315,7 +1315,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 444
       }
     ]
@@ -1325,7 +1325,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index plus trailing params.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "707",
         "descending",
         "binary",
@@ -1336,7 +1336,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "count" : true,
          "binary" : true,
          "descending" : true,
@@ -1349,7 +1349,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index_min and _max.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "-1"
     },
@@ -1358,7 +1358,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index_max" : -1,
          "ledger_index_min" : -1
       }
@@ -1369,7 +1369,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index_min and _max plus trailing params.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "413",
         "binary",
@@ -1381,7 +1381,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "binary" : true,
          "count" : true,
          "descending" : true,
@@ -1395,7 +1395,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index_min and _max plus limit.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "247",
         "-1",
         "300"
@@ -1405,7 +1405,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index_max" : -1,
          "ledger_index_min" : 247,
          "limit" : 300
@@ -1417,7 +1417,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index_min and _max, limit, trailing args.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "247",
         "-1",
         "300",
@@ -1430,7 +1430,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "binary" : true,
          "count" : true,
          "descending" : true,
@@ -1445,7 +1445,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index_min and _max plus limit and offset.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "589",
         "590",
         "67",
@@ -1456,7 +1456,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index_max" : 590,
          "ledger_index_min" : 589,
          "limit" : 67,
@@ -1469,7 +1469,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: ledger_index_min and _max, limit, offset, trailing.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "589",
         "590",
         "67",
@@ -1482,7 +1482,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "count" : true,
          "descending" : true,
          "ledger_index_max" : 590,
@@ -1514,7 +1514,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: too many arguments.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "589",
         "590",
         "67",
@@ -1559,7 +1559,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: invalid ledger.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-478.7"
     },
     RPCCallTestData::no_exception,
@@ -1567,7 +1567,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "account_tx",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0
        }
     ]
@@ -1577,7 +1577,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: max less than min.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "580",
         "579"
     },
@@ -1598,7 +1598,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: non-integer min.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "Binary",
         "-1"
     },
@@ -1610,7 +1610,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: non-integer max.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "counts"
     },
@@ -1622,7 +1622,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: non-integer offset.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "-1",
         "decending"
@@ -1635,7 +1635,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: non-integer limit.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "-1",
         "300",
@@ -1649,7 +1649,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "account_tx: RIPD-1570.", __LINE__,
     {
         "account_tx",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "-1",
         "2",
@@ -1688,8 +1688,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: minimal with currency/issuer", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
     },
     RPCCallTestData::no_exception,
     R"({
@@ -1698,11 +1698,11 @@ static RPCCallTestData const rpcCallTestArray [] =
       {
          "taker_gets" : {
             "currency" : "EUR",
-            "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+            "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
          },
          "taker_pays" : {
             "currency" : "USD",
-            "issuer" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+            "issuer" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
          }
       }
     ]
@@ -1716,14 +1716,14 @@ static RPCCallTestData const rpcCallTestArray [] =
         "book_offers",
         "USD",
         "EUR",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "book_offers",
     "params" : [
       {
-         "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "taker_gets" : {
             "currency" : "EUR"
          },
@@ -1738,9 +1738,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: add issuer and numeric ledger index.", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "EUR",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "666"
     },
     RPCCallTestData::no_exception,
@@ -1748,14 +1748,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "book_offers",
     "params" : [
       {
-         "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_index" : 666,
          "taker_gets" : {
             "currency" : "EUR"
          },
          "taker_pays" : {
             "currency" : "USD",
-            "issuer" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+            "issuer" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
          }
       }
     ]
@@ -1766,8 +1766,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     {
         "book_offers",
         "USD",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "current"
     },
     RPCCallTestData::no_exception,
@@ -1775,11 +1775,11 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "book_offers",
     "params" : [
       {
-         "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_index" : "current",
          "taker_gets" : {
             "currency" : "EUR",
-            "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+            "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
          },
          "taker_pays" : {
             "currency" : "USD"
@@ -1792,9 +1792,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: add issuer and ledger hash.", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789"
     },
     RPCCallTestData::no_exception,
@@ -1802,15 +1802,15 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "book_offers",
     "params" : [
       {
-         "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_hash" : "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
          "taker_gets" : {
             "currency" : "EUR",
-            "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+            "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
          },
          "taker_pays" : {
             "currency" : "USD",
-            "issuer" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+            "issuer" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
          }
       }
     ]
@@ -1820,9 +1820,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: issuer, ledger hash, and limit.", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
         "junk",  // Note: indexing bug in parseBookOffers() requires junk param.
         "200",
@@ -1832,17 +1832,17 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "book_offers",
     "params" : [
       {
-         "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_hash" : "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
          "limit" : 200,
          "proof" : true,
          "taker_gets" : {
             "currency" : "EUR",
-            "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+            "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
          },
          "taker_pays" : {
             "currency" : "USD",
-            "issuer" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+            "issuer" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
          }
       }
     ]
@@ -1853,9 +1853,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: issuer, ledger hash, limit, and marker.", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
         "junk",  // Note: indexing bug in parseBookOffers() requires junk param.
         "200",
@@ -1866,18 +1866,18 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "book_offers",
     "params" : [
       {
-         "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_hash" : "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
          "limit" : 200,
          "marker" : "MyMarker",
          "proof" : true,
          "taker_gets" : {
             "currency" : "EUR",
-            "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+            "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
          },
          "taker_pays" : {
             "currency" : "USD",
-            "issuer" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+            "issuer" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
          }
       }
     ]
@@ -1904,9 +1904,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: too many arguments.", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
         "junk",  // Note: indexing bug in parseBookOffers() requires junk param.
         "200",
@@ -1930,8 +1930,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: taker pays no currency.", __LINE__,
     {
         "book_offers",
-        "/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
     },
     RPCCallTestData::no_exception,
     R"({
@@ -1940,7 +1940,7 @@ static RPCCallTestData const rpcCallTestArray [] =
       {
          "error" : "invalidParams",
          "error_code" : 31,
-         "error_message" : "Invalid currency/issuer '/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh'"
+         "error_message" : "Invalid currency/issuer '/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh'"
       }
     ]
     })"
@@ -1949,8 +1949,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: taker gets no currency.", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
     },
     RPCCallTestData::no_exception,
     R"({
@@ -1959,7 +1959,7 @@ static RPCCallTestData const rpcCallTestArray [] =
       {
          "error" : "invalidParams",
          "error_code" : 31,
-         "error_message" : "Invalid currency/issuer '/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA'"
+         "error_message" : "Invalid currency/issuer '/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA'"
       }
     ]
     })"
@@ -1993,8 +1993,8 @@ static RPCCallTestData const rpcCallTestArray [] =
     {
         "book_offers",
         "USD",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "not_a_ledger"
     },
     RPCCallTestData::no_exception,
@@ -2002,11 +2002,11 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "book_offers",
     "params" : [
       {
-         "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+         "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
          "ledger_index" : 0,
          "taker_gets" : {
             "currency" : "EUR",
-            "issuer" : "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA"
+            "issuer" : "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA"
          },
          "taker_pays" : {
             "currency" : "USD"
@@ -2020,9 +2020,9 @@ static RPCCallTestData const rpcCallTestArray [] =
     "book_offers: non-numeric limit.", __LINE__,
     {
         "book_offers",
-        "USD/rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
-        "EUR/rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
-        "rnUy2SHTrB9DubsPmkJZUXTf5FcNDGrYEA",
+        "USD/bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
+        "EUR/bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
+        "bnUy2SHTbB9DursPmkJZUXTf5FcNDGbYEA",
         "ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
         "junk",  // Note: indexing bug in parseBookOffers() requires junk param.
         "not_a_number",
@@ -2222,10 +2222,11 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_authorize: too many arguments.", __LINE__,
     {
         "channel_authorize",
-        "secret_can_be_anything",
+        "secp256k1",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
         "2000",
-        "whatever"
+        "whatever",
+        "whenever"
     },
     RPCCallTestData::no_exception,
     R"({
@@ -2235,6 +2236,27 @@ static RPCCallTestData const rpcCallTestArray [] =
          "error" : "badSyntax",
          "error_code" : 1,
          "error_message" : "Syntax error."
+      }
+    ]
+    })"
+},
+{
+    "channel_authorize: bad key type.", __LINE__,
+    {
+        "channel_authorize",
+        "secp257k1",
+        "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+        "2000",
+        "whatever"
+    },
+    RPCCallTestData::no_exception,
+    R"({
+    "method" : "channel_authorize",
+    "params" : [
+      {
+         "error" : "badKeyType",
+         "error_code" : 1,
+         "error_message" : "Bad key type."
       }
     ]
     })"
@@ -2345,7 +2367,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_verify: public key.", __LINE__,
     {
         "channel_verify",
-        "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+        "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
         "0",
         "DEADBEEF"
@@ -2357,7 +2379,7 @@ static RPCCallTestData const rpcCallTestArray [] =
       {
          "amount" : "0",
          "channel_id" : "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-         "public_key" : "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+         "public_key" : "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
          "signature" : "DEADBEEF"
       }
     ]
@@ -2389,7 +2411,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_verify: too few arguments.", __LINE__,
     {
         "channel_verify",
-        "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+        "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
     },
     RPCCallTestData::no_exception,
@@ -2408,7 +2430,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_verify: too many arguments.", __LINE__,
     {
         "channel_verify",
-        "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+        "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
         "2000",
         "DEADBEEF",
@@ -2430,7 +2452,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_verify: malformed public key.", __LINE__,
     {
         "channel_verify",
-        "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9GoV",
+        "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9GoV",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
         "2000",
         "DEADBEEF"
@@ -2472,7 +2494,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_verify: invalid channel id.", __LINE__,
     {
         "channel_verify",
-        "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+        "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
         "10123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
         "2000",
         "DEADBEEF"
@@ -2493,7 +2515,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_verify: short channel id.", __LINE__,
     {
         "channel_verify",
-        "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+        "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
         "123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
         "2000",
         "DEADBEEF"
@@ -2556,7 +2578,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "channel_verify: non-hex signature.", __LINE__,
     {
         "channel_verify",
-        "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+        "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
         "40000000",
         "ThisIsNotHexadecimal"
@@ -2568,7 +2590,7 @@ static RPCCallTestData const rpcCallTestArray [] =
       {
          "amount" : "40000000",
          "channel_id" : "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
-         "public_key" : "aB4BXXLuPu8DpVuyq1DBiu3SrPdtK9AYZisKhu8mvkoiUD8J9Gov",
+         "public_key" : "aB4BXXLuPu8DpVuyq1DBiu3SbPdtK9AYZisKhu8mvkoiUD8J9Gov",
          "signature" : "ThisIsNotHexadecimal"
       }
     ]
@@ -3252,14 +3274,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "gateway_balances: minimal.", __LINE__,
     {
         "gateway_balances",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "gateway_balances",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
       }
     ]
     })"
@@ -3269,14 +3291,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     {
         "gateway_balances",
         "890765",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "gateway_balances",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "890765"
       }
     ]
@@ -3287,14 +3309,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     {
         "gateway_balances",
         "current",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "gateway_balances",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "current"
       }
     ]
@@ -3305,14 +3327,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     {
         "gateway_balances",
         "0123456789ABCDEFGHIJKLMNOPQRSTUV0123456789ABCDEFGHIJKLMNOPQRSTUV",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "gateway_balances",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_hash" : "0123456789ABCDEFGHIJKLMNOPQRSTUV0123456789ABCDEFGHIJKLMNOPQRSTUV"
       }
     ]
@@ -3322,7 +3344,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "gateway_balances: 1 hotwallet.", __LINE__,
     {
         "gateway_balances",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "hotwallet_is_not_validated"
     },
     RPCCallTestData::no_exception,
@@ -3330,7 +3352,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "gateway_balances",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "hotwallet" : [ "hotwallet_is_not_validated" ]
       }
     ]
@@ -3341,7 +3363,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     {
         "gateway_balances",
         "0123456789ABCDEFGHIJKLMNOPQRSTUV0123456789ABCDEFGHIJKLMNOPQRSTUV",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "hotwallet_is_not_validated_1",
         "hotwallet_is_not_validated_2",
         "hotwallet_is_not_validated_3",
@@ -3351,7 +3373,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "gateway_balances",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "hotwallet" : [
             "hotwallet_is_not_validated_1",
             "hotwallet_is_not_validated_2",
@@ -4715,14 +4737,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: minimal.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "owner_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
       }
     ]
     })"
@@ -4731,7 +4753,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: with numeric ledger index.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "987654321"
     },
     RPCCallTestData::no_exception,
@@ -4739,7 +4761,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "owner_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 987654321
       }
     ]
@@ -4749,7 +4771,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: with text ledger index.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "validated"
     },
     RPCCallTestData::no_exception,
@@ -4757,7 +4779,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "owner_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : "validated"
       }
     ]
@@ -4767,7 +4789,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: with ledger hash.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
     },
     RPCCallTestData::no_exception,
@@ -4775,7 +4797,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "owner_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_hash" : "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
       }
     ]
@@ -4786,7 +4808,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: strict.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "strict"
     },
     RPCCallTestData::no_exception,
@@ -4794,7 +4816,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "owner_info",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "strict" : 1
       }
     ]
@@ -4804,7 +4826,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: with ledger index and strict.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "validated",
         "strict"
     },
@@ -4841,7 +4863,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: too many arguments.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "current",
         "extra",
         "strict",
@@ -4882,7 +4904,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: invalid ledger selection 1.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "no_ledger"
     },
     RPCCallTestData::no_exception,
@@ -4890,7 +4912,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "owner_info",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0
        }
     ]
@@ -4902,7 +4924,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "owner_info: invalid ledger selection 2.", __LINE__,
     {
         "owner_info",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "no_ledger",
         "strict"
     },
@@ -5366,7 +5388,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "sign_for: minimal.", __LINE__,
     {
         "sign_for",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "my_secret",
         R"({"json_argument":true})",
     },
@@ -5375,7 +5397,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "sign_for",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "secret" : "my_secret",
          "tx_json" : {
             "json_argument" : true
@@ -5388,7 +5410,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "sign_for: offline.", __LINE__,
     {
         "sign_for",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "my_secret",
         R"({"json_argument":true})",
         "offline"
@@ -5398,7 +5420,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "sign_for",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "offline" : true,
          "secret" : "my_secret",
          "tx_json" : {
@@ -5412,7 +5434,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "sign_for: too few arguments.", __LINE__,
     {
         "sign_for",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "my_secret",
     },
     RPCCallTestData::no_exception,
@@ -5431,7 +5453,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "sign_for: too many arguments.", __LINE__,
     {
         "sign_for",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "my_secret",
         R"({"json_argument":true})",
         "offline",
@@ -5453,7 +5475,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "sign_for: invalid json (note extra comma).", __LINE__,
     {
         "sign_for",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "my_secret",
         R"({"json_argument":true,})",
     },
@@ -5473,7 +5495,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "sign_for: invalid final argument.", __LINE__,
     {
         "sign_for",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "my_secret",
         R"({"json_argument":true})",
         "ofline"
@@ -6153,14 +6175,14 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: minimal.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh"
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh"
     },
     RPCCallTestData::no_exception,
     R"({
     "method" : "tx_account",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
       }
     ]
     })"
@@ -6169,7 +6191,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: ledger_index .", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "4294967295"
     },
     RPCCallTestData::no_exception,
@@ -6177,7 +6199,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "tx_account",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 4294967295
       }
     ]
@@ -6187,7 +6209,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: ledger_index plus trailing params.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "707",
         "forward",
         "binary",
@@ -6198,7 +6220,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "tx_account",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "binary" : true,
          "count" : true,
          "forward" : true,
@@ -6211,7 +6233,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: ledger_index_min and _max.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "2147483647",
         "2147483647"
     },
@@ -6220,7 +6242,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "tx_account",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index_max" : 2147483647,
          "ledger_index_min" : 2147483647
       }
@@ -6231,7 +6253,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: ledger_index_min and _max plus trailing params.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "33333",
         "2147483647",
         "binary",
@@ -6243,7 +6265,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "tx_account",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "binary" : true,
          "count" : true,
          "forward" : true,
@@ -6257,7 +6279,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: ledger_index_min and _max plus limit.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "2147483647",
         "2147483647"
@@ -6267,7 +6289,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "tx_account",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index_max" : 2147483647,
          "ledger_index_min" : -1,
          "limit" : 2147483647
@@ -6279,7 +6301,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: ledger_index_min and _max, limit, trailing args.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "1",
         "1",
         "-1",
@@ -6292,7 +6314,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "tx_account",
     "params" : [
       {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "binary" : true,
          "count" : true,
          "forward" : true,
@@ -6324,7 +6346,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: too many arguments.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "589",
         "590",
         "67",
@@ -6368,7 +6390,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: invalid ledger.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-478.7"
     },
     RPCCallTestData::no_exception,
@@ -6376,7 +6398,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "method" : "tx_account",
     "params" : [
        {
-         "account" : "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+         "account" : "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
          "ledger_index" : 0
        }
     ]
@@ -6386,7 +6408,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: max less than min.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "580",
         "579"
     },
@@ -6407,7 +6429,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: min large but still valid.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "2147483648",
         "2147483648"
     },
@@ -6419,7 +6441,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: max large but still valid.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "2147483647",
         "2147483648"
     },
@@ -6431,7 +6453,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: large limit.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "-1",
         "2147483648"
@@ -6444,7 +6466,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: non-integer min.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "Binary",
         "-1"
     },
@@ -6456,7 +6478,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: non-integer max.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "counts"
     },
@@ -6468,7 +6490,7 @@ static RPCCallTestData const rpcCallTestArray [] =
     "tx_account: non-integer limit.", __LINE__,
     {
         "tx_account",
-        "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh",
         "-1",
         "-1",
         "decending"

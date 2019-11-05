@@ -32,11 +32,11 @@ namespace test {
 class ValidatorKeys_test : public beast::unit_test::suite
 {
     // Used with [validation_seed]
-    const std::string seed = "shUwVw52ofnCUX5m7kPTKzJdr4HEH";
+    const std::string seed = "shUwVw52ofnCUX5m7kPTKzJdb4HEH";
 
     // Used with [validation_token]
     const std::string tokenSecretStr =
-        "paQmjZ37pKKPMrgadBLsuf9ab7Y7EUNzh27LQrZqoexpAs31nJi";
+        "paQmjZ37pKKPMbgadBLsuf9ar7Y7EUNzh27LQbZqoexpAs31nJi";
 
     const std::vector<std::string> tokenBlob = {
         "    "

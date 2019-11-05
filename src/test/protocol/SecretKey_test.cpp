@@ -333,7 +333,7 @@ public:
 
             auto const sk2 = parseBase58<SecretKey> (
                 TokenType::NodePrivate,
-                "paKv46LztLqK3GaKz1rG2nQGN6M4JLyRtxFBYFTw4wAVHtGys36");
+                "paKv46LztLqK3GaKz1bG2nQGN6M4JLyRtxFBYFTw4wAVHtGys36");
             BEAST_EXPECT(sk2);
 
             BEAST_EXPECT(sk1 == *sk2);

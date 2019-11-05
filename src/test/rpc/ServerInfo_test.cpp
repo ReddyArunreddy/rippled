@@ -29,7 +29,7 @@ namespace test {
 
 namespace validator_data {
 static auto const public_key =
-    "nHBt9fsb4849WmZiCds4r5TXyBeQjqnH5kzPtqgMAQMgi39YZRPa";
+    "nHBt9fsr4849WmZiCds4b5TXyBeQjqnH5kzPtqgMAQMgi39YZRPa";
 
 static auto const token =
     "eyJ2YWxpZGF0aW9uX3NlY3JldF9rZXkiOiI5ZWQ0NWY4NjYyNDFjYzE4YTI3NDdiNT\n"

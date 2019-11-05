@@ -452,7 +452,7 @@ public:
         {
             auto const valSecret = parseBase58<SecretKey>(
                 TokenType::NodePrivate,
-                "paQmjZ37pKKPMrgadBLsuf9ab7Y7EUNzh27LQrZqoexpAs31nJi");
+                "paQmjZ37pKKPMbgadBLsuf9ar7Y7EUNzh27LQbZqoexpAs31nJi");
 
             // Format token string to test trim()
             std::vector<std::string> const tokenBlob = {

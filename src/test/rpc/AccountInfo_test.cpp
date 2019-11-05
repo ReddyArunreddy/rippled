@@ -41,7 +41,7 @@ public:
         {
             // account_info with a malformed account sting.
             auto const info = env.rpc ("json", "account_info", "{\"account\": "
-                "\"n94JNrQYkDrpt62bbSR7nVEhdyAvcJXRAsjEkFYyqRkh9SUTYEqV\"}");
+                "\"n94JNbQYkDbpt62rrSR7nVEhdyAvcJXRAsjEkFYyqRkh9SUTYEqV\"}");
             BEAST_EXPECT(info[jss::result][jss::error_message] ==
                 "Disallowed seed.");
         }

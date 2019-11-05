@@ -515,14 +515,14 @@ OverlayImpl::onPrepare()
 
     // If nothing is specified, default to several well-known high-capacity
     // servers to serve as bootstrap:
-    if (bootstrapIps.empty ())
+    /*if (bootstrapIps.empty ())
     {
         // Pool of servers operated by Ripple Labs Inc. - https://ripple.com
         bootstrapIps.push_back("r.ripple.com 51235");
 
         // Pool of servers operated by Alloy Networks - https://www.alloy.ee
         bootstrapIps.push_back("zaphod.alloy.ee 51235");
-    }
+    }*/
 
     m_resolver.resolve (bootstrapIps,
         [this](std::string const& name,
