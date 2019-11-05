@@ -73,7 +73,7 @@ struct STAccount_test : public beast::unit_test::suite
 
             // Test constructor from SField and AccountID.
             STAccount const zeroAcct {sfAccount, AccountID{}};
-            BEAST_EXPECT(zeroAcct.getText() == "rrrrrrrrrrrrrrrrrrrrrhoLvTp");
+            BEAST_EXPECT(zeroAcct.getText() == "bbbbbbbbbbbbbbbbbbbbbhoLvTp");
             BEAST_EXPECT(! zeroAcct.isDefault());
             BEAST_EXPECT(zeroAcct.value() == AccountID {0});
             BEAST_EXPECT(! zeroAcct.isEquivalent (defaultAcct));

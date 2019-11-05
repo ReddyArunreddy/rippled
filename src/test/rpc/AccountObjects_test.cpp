@@ -32,7 +32,7 @@ namespace test {
 
 static char const* bobs_account_objects[] = {
 R"json({
-  "Account" : "rPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
+  "Account" : "bPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
   "BookDirectory" : "50AD0A9E54D2B381288D535EB724E4275FFBF41580D28A925D038D7EA4C68000",
   "BookNode" : "0000000000000000",
   "Flags" : 65536,
@@ -41,7 +41,7 @@ R"json({
   "Sequence" : 6,
   "TakerGets" : {
     "currency" : "USD",
-    "issuer" : "rPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
+    "issuer" : "bPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
     "value" : "1"
   },
   "TakerPays" : "100000000",
@@ -51,20 +51,20 @@ R"json({
 R"json({
     "Balance" : {
         "currency" : "USD",
-        "issuer" : "rrrrrrrrrrrrrrrrrrrrBZbvji",
+        "issuer" : "bbbbbbbbbbbbbbbbbbbbBZrvji",
         "value" : "-1000"
     },
     "Flags" : 131072,
     "HighLimit" : {
         "currency" : "USD",
-        "issuer" : "rPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
+        "issuer" : "bPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
         "value" : "1000"
     },
     "HighNode" : "0000000000000000",
     "LedgerEntryType" : "RippleState",
     "LowLimit" : {
         "currency" : "USD",
-        "issuer" : "r9cZvwKU3zzuZK9JFovGg1JC5n7QiqNL8L",
+        "issuer" : "b9cZvwKU3zzuZK9JFovGg1JC5n7QiqNL8L",
         "value" : "0"
     },
     "LowNode" : "0000000000000000",
@@ -74,20 +74,20 @@ R"json({
 R"json({
     "Balance" : {
         "currency" : "USD",
-        "issuer" : "rrrrrrrrrrrrrrrrrrrrBZbvji",
+        "issuer" : "bbbbbbbbbbbbbbbbbbbbBZrvji",
         "value" : "-1000"
     },
     "Flags" : 131072,
     "HighLimit" : {
         "currency" : "USD",
-        "issuer" : "rPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
+        "issuer" : "bPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
         "value" : "1000"
     },
     "HighNode" : "0000000000000000",
     "LedgerEntryType" : "RippleState",
     "LowLimit" : {
         "currency" : "USD",
-        "issuer" : "r32rQHyesiTtdWFU7UJVtff4nCR5SHCbJW",
+        "issuer" : "b32bQHyesiTtdWFU7UJVtff4nCR5SHCrJW",
         "value" : "0"
     },
     "LowNode" : "0000000000000000",
@@ -95,7 +95,7 @@ R"json({
 })json"
 ,
 R"json({
-    "Account" : "rPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
+    "Account" : "bPMh7Pi9ct699iZUTWaytJUoHcJ7cgyziK",
     "BookDirectory" : "B025997A323F5C3E03DDF1334471F5984ABDE31C59D463525D038D7EA4C68000",
     "BookNode" : "0000000000000000",
     "Flags" : 65536,
@@ -104,7 +104,7 @@ R"json({
     "Sequence" : 7,
     "TakerGets" : {
         "currency" : "USD",
-        "issuer" : "r32rQHyesiTtdWFU7UJVtff4nCR5SHCbJW",
+        "issuer" : "b32bQHyesiTtdWFU7UJVtff4nCR5SHCrJW",
         "value" : "1"
     },
     "TakerPays" : "100000000",
@@ -131,7 +131,7 @@ public:
         // test error on  malformed account string.
         {
             Json::Value params;
-            params[jss::account] = "n94JNrQYkDrpt62bbSR7nVEhdyAvcJXRAsjEkFYyqRkh9SUTYEqV";
+            params[jss::account] = "n94JNbQYkDbpt62rrSR7nVEhdyAvcJXRAsjEkFYyqRkh9SUTYEqV";
             auto resp = env.rpc("json", "account_objects", to_string(params));
             BEAST_EXPECT( resp[jss::result][jss::error_message] == "Disallowed seed.");
         }

@@ -82,7 +82,7 @@ secure_gateway(std::unique_ptr<Config> cfg)
     return cfg;
 }
 
-auto constexpr defaultseed = "shUwVw52ofnCUX5m7kPTKzJdr4HEH";
+auto constexpr defaultseed = "shUwVw52ofnCUX5m7kPTKzJdb4HEH";
 
 std::unique_ptr<Config>
 validator(std::unique_ptr<Config> cfg, std::string const& seed)

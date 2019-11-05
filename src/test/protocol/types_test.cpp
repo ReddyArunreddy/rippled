@@ -28,7 +28,7 @@ struct types_test : public beast::unit_test::suite
     testAccountID()
     {
         auto const s =
-            "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh";
+            "bHr9CJAWyB4bj91VRWn96DkukG4rwdtyTh";
         if (BEAST_EXPECT(parseBase58<AccountID>(s)))
             BEAST_EXPECT(toBase58(
                 *parseBase58<AccountID>(s)) == s);

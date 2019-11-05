@@ -46,7 +46,7 @@ public:
             // account_lines with a malformed account.
             auto const lines = env.rpc ("json", "account_lines",
                 R"({"account": )"
-                R"("n9MJkEKHDhy5eTLuHUQeAAjo382frHNbFK4C8hcwN4nwM2SrLdBj"})");
+                R"("n9MJkEKHDhy5eTLuHUQeAAjo382fbHNrFK4C8hcwN4nwM2SbLdBj"})");
             BEAST_EXPECT(lines[jss::result][jss::error_message] ==
                 RPC::make_error(rpcBAD_SEED)[jss::error_message]);
         }
@@ -195,7 +195,7 @@ public:
             auto const lines = env.rpc ("json", "account_lines",
                 R"({"account": ")" + alice.human() + R"(", )"
                 R"("peer": )"
-                R"("n9MJkEKHDhy5eTLuHUQeAAjo382frHNbFK4C8hcwN4nwM2SrLdBj"})");
+                R"("n9MJkEKHDhy5eTLuHUQeAAjo382fbHNrFK4C8hcwN4nwM2SbLdBj"})");
             BEAST_EXPECT(lines[jss::result][jss::error_message] ==
                 RPC::make_error(rpcBAD_SEED)[jss::error_message]);
         }
@@ -388,7 +388,7 @@ public:
                 R"("id" : 5,)"
                 R"("params": )"
                 R"({"account": )"
-                R"("n9MJkEKHDhy5eTLuHUQeAAjo382frHNbFK4C8hcwN4nwM2SrLdBj"}})");
+                R"("n9MJkEKHDhy5eTLuHUQeAAjo382fbHNrFK4C8hcwN4nwM2SbLdBj"}})");
             BEAST_EXPECT(lines[jss::error][jss::message] ==
                 RPC::make_error(rpcBAD_SEED)[jss::error_message]);
             BEAST_EXPECT(lines.isMember(jss::jsonrpc) && lines[jss::jsonrpc] == "2.0");
@@ -617,7 +617,7 @@ public:
                 R"("params": )"
                 R"({"account": ")" + alice.human() + R"(", )"
                 R"("peer": )"
-                R"("n9MJkEKHDhy5eTLuHUQeAAjo382frHNbFK4C8hcwN4nwM2SrLdBj"}})");
+                R"("n9MJkEKHDhy5eTLuHUQeAAjo382fbHNrFK4C8hcwN4nwM2SbLdBj"}})");
             BEAST_EXPECT(lines[jss::error][jss::message] ==
                 RPC::make_error(rpcBAD_SEED)[jss::error_message]);
             BEAST_EXPECT(lines.isMember(jss::jsonrpc) && lines[jss::jsonrpc] == "2.0");

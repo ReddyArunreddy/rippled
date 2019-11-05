@@ -118,7 +118,7 @@ class TxQ_test : public beast::unit_test::suite
             }
 
             // In order for the vote to occur, we must run as a validator
-            p->section("validation_seed").legacy("shUwVw52ofnCUX5m7kPTKzJdr4HEH");
+            p->section("validation_seed").legacy("shUwVw52ofnCUX5m7kPTKzJdb4HEH");
         }
         return p;
     }

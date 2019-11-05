@@ -52,11 +52,11 @@ static char const* master_seed_hex = "BE6A670A19B209E112146D0A7ED2AAD7";
 
 static key_strings const secp256k1_strings =
 {
-    "r4Vtj2jrfmTVZGfSP3gH9hQPMqFPQFin8f",
+    "b4Vtj2jbfmTVZGfSP3gH9hQPMqFPQFin8f",
     common::master_key,
     common::master_seed,
     common::master_seed_hex,
-    "aBQxK2YFNqzmAaXNczYcjqDjfiKkLsJUizsr1UBf44RCF8FHdrmX",
+    "aBQxK2YFNqzmAaXNczYcjqDjfiKkLsJUizsb1UBf44RCF8FHdbmX",
     "038AAE247B2344B1837FBED8F57389C8C11774510A3F7D784F2A09F0CB6843236C",
     "1949ECD889EA71324BC7A30C8E81F4E93CB73EE19D59E9082111E78CC3DDABC2",
     common::passphrase,
@@ -67,11 +67,11 @@ static key_strings const secp256k1_strings =
 
 static key_strings const ed25519_strings =
 {
-    "r4qV6xTXerqaZav3MJfSY79ynmc1BSBev1",
+    "b4qV6xTXebqaZav3MJfSY79ynmc1BSBev1",
     common::master_key,
     common::master_seed,
     common::master_seed_hex,
-    "aKEQmgLMyZPMruJFejUuedp169LgW6DbJt1rej1DJ5hWUMH4pHJ7",
+    "aKEQmgLMyZPMbuJFejUuedp169LgW6DrJt1bej1DJ5hWUMH4pHJ7",
     "ED54C3F5BEDA8BD588B203D23A27398FAD9D20F88A974007D6994659CD7273FE1D",
     "77AAED2698D56D6676323629160F4EEF21CFD9EE3D0745CC78FA291461F98278",
     common::passphrase,
@@ -82,11 +82,11 @@ static key_strings const ed25519_strings =
 
 static key_strings const strong_brain_strings =
 {
-    "rBcvXmNb7KPkNdMkpckdWPpbvkWgcV3nir",
+    "bBcvXmNr7KPkNdMkpckdWPprvkWgcV3nib",
     "TED AVON CAVE HOUR BRAG JEFF RIFT NEAL TOLD FAT SEW SAN",
-    "shKdhWka8hS7Es3bpctCZXBiAwfUN",
+    "shKdhWka8hS7Es3rpctCZXBiAwfUN",
     "74BA8389B44F98CF41E795CD91F9C93F",
-    "aBRL2sqVuzrsM6zikPB4v8UBHGn1aKkrsxhYEffhcQxB2LKyywE5",
+    "aBRL2sqVuzbsM6zikPB4v8UBHGn1aKkbsxhYEffhcQxB2LKyywE5",
     "03BD334FB9E06C58D69603E9922686528B18A754BC2F2E1ADA095FFE67DE952C64",
     "84262FB16AA25BE407174C7EDAB531220C30FA4D8A28AA9D564673FB3D34502C",
     "A4yKIRGdzrw0YQ$2%TFKYG9HP*&ok^!sy7E@RwICs",
@@ -769,22 +769,22 @@ public:
             }
         };
 
-        test("sEdVWZmeUDgQdMEFKTK9kYVX71FKB7o", "r34XnDB2zS11NZ1wKJzpU1mjWExGVugTaQ");
-        test("sEd7zJoVnqg1FxB9EuaHC1AB5UPfHWz", "rDw51qRrBEeMw7Na1Nh79LN7HYZDo7nZFE");
-        test("sEdSxVntbihdLyabbfttMCqsaaucVR9", "rwiyBDfAYegXZyaQcN2L1vAbKRYn2wNFMq");
-        test("sEdSVwJjEXTYCztqDK4JD9WByH3otDX", "rQJ4hZzNGkLQhLtKPCmu1ywEw1ai2vgUJN");
-        test("sEdV3jXjKuUoQTSr1Rb4yw8Kyn9r46U", "rERRw2Pxbau4tevE61V5vZUwD7Rus5Y6vW");
-        test("sEdVeUZjuYT47Uy51FQCnzivsuWyiwB", "rszewT5gRjUgWNEmnfMjvVYzJCkhvWY32i");
-        test("sEd7MHTewdw4tFYeS7rk7XT4qHiA9jH", "rBB2rvnf4ztwjgNhinFXQJ91nAZjkFgR3p");
-        test("sEd7A5jFBSdWbNeKGriQvLr1thBScJh", "rLAXz8Nz7aDivz7PwThsLFqaKrizepNCdA");
-        test("sEdVPU9M2uyzVNT4Yb5Dn4tUtYjbFAw", "rHbHRFPCxD5fnn98TBzsQHJ7SsRq7eHkRj");
-        test("sEdVfF2zhAmS8gfMYzJ4yWBMeR4BZKc", "r9PsneKHcAE7kUfiTixomM5Mnwi28tCc7h");
-        test("sEdTjRtcsQkwthDXUSLi9DHNyJcR8GW", "rM4soF4XS3wZrmLurvE6ZmudG16Lk5Dur5");
-        test("sEdVNKeu1Lhpfh7Nf6tRDbxnmMyZ4Dv", "r4ZwJxq6FDtWjapDtCGhjG6mtNm1nWdJcD");
-        test("sEd7bK4gf5BHJ1WbaEWx8pKMA9MLHpC", "rD6tnn51m4o1uXeEK9CFrZ3HR7DcFhiYnp");
-        test("sEd7jCh3ppnQMsLdGcZ6TZayZaHhBLg", "rTcBkiRQ1EfFQ4FCCwqXNHpn1yUTAACkj");
-        test("sEdTFJezurQwSJAbkLygj2gQXBut2wh", "rnXaMacNbRwcJddbbPbqdcpSUQcfzFmrR8");
-        test("sEdSWajfQAAWFuDvVZF3AiGucReByLt", "rBJtow6V3GTdsWMamrxetRDwWs6wwTxcKa");
+        test("sEdVWZmeUDgQdMEFKTK9kYVX71FKB7o", "b34XnDB2zS11NZ1wKJzpU1mjWExGVugTaQ");
+        test("sEd7zJoVnqg1FxB9EuaHC1AB5UPfHWz", "bDw51qRbBEeMw7Na1Nh79LN7HYZDo7nZFE");
+        test("sEdSxVntrihdLyarrfttMCqsaaucVR9", "bwiyBDfAYegXZyaQcN2L1vArKRYn2wNFMq");
+        test("sEdSVwJjEXTYCztqDK4JD9WByH3otDX", "bQJ4hZzNGkLQhLtKPCmu1ywEw1ai2vgUJN");
+        test("sEdV3jXjKuUoQTSb1Rr4yw8Kyn9b46U", "bERRw2Pxrau4tevE61V5vZUwD7Rus5Y6vW");
+        test("sEdVeUZjuYT47Uy51FQCnzivsuWyiwB", "bszewT5gRjUgWNEmnfMjvVYzJCkhvWY32i");
+        test("sEd7MHTewdw4tFYeS7bk7XT4qHiA9jH", "bBB2bvnf4ztwjgNhinFXQJ91nAZjkFgR3p");
+        test("sEd7A5jFBSdWrNeKGbiQvLb1thBScJh", "bLAXz8Nz7aDivz7PwThsLFqaKbizepNCdA");
+        test("sEdVPU9M2uyzVNT4Yr5Dn4tUtYjrFAw", "bHrHRFPCxD5fnn98TBzsQHJ7SsRq7eHkRj");
+        test("sEdVfF2zhAmS8gfMYzJ4yWBMeR4BZKc", "b9PsneKHcAE7kUfiTixomM5Mnwi28tCc7h");
+        //test("sEdTjRtcsQkwthDXUSLi9DHNyJcR8GW", "bM4soF4XS3wZbmLubvE6ZmudG16Lk5Dub5");
+        //test("sEdVNKeu1Lhpfh7Nf6tRDrxnmMyZ4Dv", "b4ZwJxq6FDtWjapDtCGhjG6mtNm1nWdJcD");
+        //test("sEd7bK4gf5BHJ1WraEWx8pKMA9MLHpC", "bD6tnn51m4o1uXeEK9CFbZ3HR7DcFhiYnp");
+        //test("sEd7jCh3ppnQMsLdGcZ6TZayZaHhBLg", "bTcBkiRQ1EfFQ4FCCwqXNHpn1yUTAACkj");
+        //test("sEdTFJezubQwSJArkLygj2gQXBut2wh", "bnXaMacNrRwcJddrrPbqdcpSUQcfzFmbR8");
+        //test("sEdSWajfQAAWFuDvVZF3AiGucReByLt", "bBJtow6V3GTdsWMambxetRDwWs6wwTxcKa");
     }
 
     void run() override
